@@ -5,11 +5,14 @@ A responsive, accessible Employee Directory web application built with **Vite**,
 > **Project:** Sumerix Global – Full Stack Web Development Internship, **Task 2**
 > **Author:** Anjan Basak
 
+[View the Task 2 project documentation (PDF)](public/Task2_Employee_Directory_Project_Documentation_00.pdf)
+
 ---
 
 ## Table of Contents
 
 1. [What is this project?](#1-what-is-this-project)
+- [Project Documentation (PDF)](public/Task2_Employee_Directory_Project_Documentation_00.pdf)
 2. [Live Demo and Screenshots](#2-live-demo-and-screenshots)
 3. [Features](#3-features)
 4. [Technologies Used](#4-technologies-used)
@@ -52,7 +55,7 @@ You do not need any backend. All data comes from a free public API.
 
 ## 2. Live Demo and Screenshots
 
-**Live site:** `https://your-username.github.io/your-repo-name/` _(replace after deploying, or remove this line)_
+**Live site:** `https://123anjan.github.io/SumerixGlobal-projects-Task-2/` _(replace after deploying, or remove this line)_
 
 Add your screenshots to a `screenshots/` folder and link them here:
 
