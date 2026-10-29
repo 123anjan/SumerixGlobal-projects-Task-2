@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive Employee Directory" />
+    <title>Employee Directory</title>
+  </head>
+  <body
+    class="bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-100"
+  >
+    <div class="mx-auto max-w-7xl p-4 lg:p-8">
+      <header class="mb-6 flex items-center justify-between">
+        <div>
+          <h1 class="text-2xl font-semibold">Employee Directory</h1>
+          <p class="text-sm text-slate-500 dark:text-slate-400">
+            Search, filter and favorite your colleagues
+          </p>
+        </div>
+        <button
+          id="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          class="rounded border border-slate-300 px-3 py-2 text-sm hover:bg-white focus-visible:outline-2 focus-visible:outline-teal-500 dark:border-slate-600 dark:hover:bg-slate-800"
+        >
+          Dark mode
+        </button>
+      </header>
+
+      <section
+        aria-label="Filters"
+        class="mb-6 rounded-lg bg-white p-4 shadow-sm dark:bg-slate-800"
+      >
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <label
+              for="search"
+              class="mb-1 block text-xs font-medium text-slate-500"
+              >Name</label
+            >
+            <input
+              id="search"
+              type="search"
+              placeholder="Type in a name..."
+              autocomplete="off"
+              class="w-full rounded border border-slate-300 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-900"
+            />
+          </div>
+          <div>
+            <label
+              for="department"
+              class="mb-1 block text-xs font-medium text-slate-500"
+              >Department</label
+            >
+            <select
+              id="department"
+              class="w-full rounded border border-slate-300 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-900"
+            ></select>
+          </div>
+          <div>
+            <label
+              for="availability"
+              class="mb-1 block text-xs font-medium text-slate-500"
+              >Availability</label
+            >
+            <select
+              id="availability"
+              class="w-full rounded border border-slate-300 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-900"
+            >
+              <option value="All">All</option>
+              <option value="Available">Available</option>
+              <option value="Out">Out</option>
+            </select>
+          </div>
+          <div>
+            <label
+              for="sort"
+              class="mb-1 block text-xs font-medium text-slate-500"
+              >Sort by</label
+            >
+            <select
+              id="sort"
+              class="w-full rounded border border-slate-300 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-900"
+            >
+              <option value="az">Alphabetical A-Z</option>
+              <option value="za">Alphabetical Z-A</option>
+              <option value="dept">Department</option>
+            </select>
+          </div>
+        </div>
+        <label class="mt-4 inline-flex items-center gap-2 text-sm">
+          <input
+            id="favorites-only"
+            type="checkbox"
+            class="h-4 w-4 accent-teal-600"
+          />
+          Show favorites only
+        </label>
+      </section>
+
+      <main class="grid gap-6 lg:grid-cols-[1fr_340px]">
+        <section
+          aria-label="Employees"
+          class="rounded-lg bg-white shadow-sm dark:bg-slate-800"
+        >
+          <p
+            id="result-count"
+            class="border-b border-slate-200 px-4 py-3 text-sm text-slate-500 dark:border-slate-700"
+            aria-live="polite"
+          ></p>
+          <div id="employee-list"></div>
+        </section>
+        <aside
+          id="detail-panel"
+          aria-label="Employee details"
+          class="h-fit rounded-lg bg-white p-6 shadow-sm dark:bg-slate-800"
+        ></aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
