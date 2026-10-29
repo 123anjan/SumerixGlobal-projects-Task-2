@@ -58,12 +58,12 @@ Add your screenshots to a `screenshots/` folder and link them here:
 
 | View                | Screenshot                                   |
 | ------------------- | -------------------------------------------- |
-| Desktop (light)     | `![Desktop](screenshots/desktop-light.png)`  |
-| Desktop (dark mode) | `![Dark mode](screenshots/desktop-dark.png)` |
-| Mobile              | `![Mobile](screenshots/mobile.png)`          |
-| Loading state       | `![Loading](screenshots/loading.png)`        |
-| Error state         | `![Error](screenshots/error.png)`            |
-| Empty search result | `![Empty](screenshots/empty.png)`            |
+| Desktop (light)     | `![Desktop](public/desktop-light.png)`  |
+| Desktop (dark mode) | `![Dark mode](public/desktop-dark.png)` |
+| Mobile              | `![Mobile](public/mobile.png)`          |
+| Loading state       | `![Loading](public/loading.png)`        |
+| Error state         | `![Error](public/error.png)`            |
+| Empty search result | `![Empty](public/empty.png)`            |
 
 ---
 
