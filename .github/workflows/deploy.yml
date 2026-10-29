@@ -23,14 +23,12 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: Task-2/package-lock.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
-        working-directory: Task-2
       - run: npm run build
-        working-directory: Task-2
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: Task-2/dist
+          path: dist
 
   deploy:
     needs: build

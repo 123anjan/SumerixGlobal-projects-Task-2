@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "base": "/SumerixGlobal-projects-Task-2/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
