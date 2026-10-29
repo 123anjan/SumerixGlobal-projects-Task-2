@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "base": "https://github.com/123anjan/SumerixGlobal-projects-Task-2.git",
+  "base": "/SumerixGlobal-projects-Task-2/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
